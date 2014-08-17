@@ -1,0 +1,98 @@
+\usepackage[latin1]{inputenc}
+%\usepackage[usenames,dvipsnames]{color}
+\usepackage{ifthen}
+\usepackage{moreverb}
+\definecolor{light-gray}{gray}{0.95}
+\oddsidemargin  0.0in
+\evensidemargin 0.0in
+\textwidth      6.7in
+\headsep        0.5in
+\textheight     9.5in
+\topmargin      -1.5cm
+\parindent      0.0in
+\addtolength{\parskip}{0.4\baselineskip}
+
+\pagestyle{myheadings}
+\markright{Competencia Interna de Segunda División de la UMSA}
+\newcounter{pcounter}\setcounter{pcounter}{0}
+\newcounter{INPUT}
+\newcounter{OUTPUT}
+
+\newcommand{\inputstd}{\setcounter{INPUT}{0}}
+\newcommand{\inputfile}{\setcounter{INPUT}{1}}
+\newcommand{\outputstd}{\setcounter{OUTPUT}{0}}
+\newcommand{\outputfile}{\setcounter{OUTPUT}{1}}
+
+\newcommand{\problem}[2]
+    {
+    \def\curprob{#2}
+    \newpage
+    \addcontentsline{toc}{section}{#1}
+    \addtocounter{pcounter}{1}
+    \begin{center}
+    \huge{\bf \sf Problema \Alph{pcounter} \\ \sf #1 }\\ [2mm]
+    %\normalsize {\em La lectura de datos es de teclado.}
+    %\normalsize {\em Los resultados se muestran por pantalla.}
+    \vspace{6pt}
+    \end{center}
+    }
+\newcommand{\datosl}{
+	\section*{Ejemplos de entrada}
+    \verbatiminput{\curprob/sample.in}
+	\section*{Ejemplos de salida}
+    \verbatiminput{\curprob/sample.out}
+}
+\newcommand{\datos}{
+	\vspace{12pt}
+	\noindent
+	\begin{minipage}[c]{\textwidth}
+	\begin{center}
+	\begin{tabular}{|l|l|} \hline
+	\begin{minipage}[t]{0.45\textwidth}
+	\bf{Ejemplos de entrada}      
+    \verbatiminput{\curprob/sample.in}
+	\vskip 12pt
+
+	\end{minipage}
+	&
+	\begin{minipage}[t]{0.45\textwidth}
+    \bf{Ejemplos de salida}
+    \verbatiminput{\curprob/sample.out}
+	\vskip 12pt
+
+	\end{minipage}\\
+	\hline
+	\end{tabular}
+	\end{center}
+	\end{minipage}
+}
+
+\newcommand{\explica}{
+\subsection*{Problema}
+
+Para el dato de entrada siguiente escriba un programa que halle la respuesta.
+    \verbatiminput{\curprob/tarea.in}
+
+La respuesta que debes entregar es:
+    \verbatiminput{\curprob/tarea.out}
+
+\subsection*{Análisis y Solución}
+\input{\curprob/explica.tex}
+
+\subsection*{Programa que resuelve el problema}
+\lstset{language=C, numbers=left,tabsize=2,breaklines=true, backgroundcolor=\color{light-gray}}
+\lstinputlisting{\curprob/sol.c}
+}
+
+\newcommand{\pregunta}{
+\subsection*{Problema}
+
+Para el dato de entrada siguiente, escriba un programa que halle la respuesta.
+
+    \verbatiminput{\curprob/tarea.in}
+}
+
+\renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
+                                     {-1.0ex\@plus -1ex \@minus -.2ex}%
+                                     {1.0ex \@plus .2ex}%
+                                   {\reset@font\large\bfseries}}

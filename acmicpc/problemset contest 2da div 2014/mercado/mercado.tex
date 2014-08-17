@@ -1,0 +1,26 @@
+\problem{Mercado M\'agico}{mercado}
+
+Alice trabaja en un súper mercado Mágico, que tiene N productos para vender y la cantidad de estos productos es infinita, pero tiene una regla poco usual a la hora que un cliente realice su compra, los gerentes decidieron que la forma de comprar será la siguiente:
+Un cliente solo puede elegir del único estante de productos un determinado rango, es decir, del producto i hasta el producto j. Esto para facilitar el cálculo del precio y no pasar cada producto uno a uno por el lector de código de barras.
+Aparte de esta forma poco usual de realizar compras, los gerentes cambian el precio de cada producto constantemente, es decir que en un momento dado, el total del precio de un rango (i, j) puede variar en el futuro.
+Un día Alice se cayo de la motocicleta y se olvidó sumar, es por eso que ella desea un programa que realice las siguientes operaciones:
+
+\begin{itemize}
+  \item Obtener el precio total de un rango (i,j)
+  \item Actualizar el precio del producto “i” a un valor “v”
+\end{itemize}
+
+\subsection*{Input}
+
+La entrada comienza con un número T($1 \leq T \leq 100$) que representa el número de casos de prueba, para cada caso la entrada consta de dos números N ($1 \leq N \leq 100000$) M ($1 \leq M \leq 100000$) que representan el número de productos en el mercado y el número de operaciones a realizar. 
+La siguiente línea contiene N elementos que son los precios iniciales “v” $1 \leq v \leq 100$ de cada producto “i”.
+Luego siguen M líneas con el siguiente formato:
+P i j, donde P es el comando para obtener el precio total del rango (i,j).
+o
+A i v, donde A es el comando para actualizar el producto “i” a un valor “v”.
+
+\subsection*{Output}
+
+Por cada comando P, mostrar el precio total para el rango (i,j) dado.
+
+\datos

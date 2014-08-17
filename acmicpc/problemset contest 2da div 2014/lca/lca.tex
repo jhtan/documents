@@ -1,0 +1,8 @@
+\problem{LCA (Lowest Common Ancestor)}{lca}
+
+El ancestro común más bajo (LCA) es un concepto dentro de la teoría de grafos y Ciencias de la Computación. Sea T un árbol con raíz y n nodos. El ancestro común más bajo entre dos nodos v y w se define como el nodo más bajo en T que tiene a v y w como descendientes (donde se permite a un nodo ser descendiente de él mismo).
+El LCA de v y w en T es el ancestro compartido de v y w que está localizado más lejos de la raíz. 
+Considere un árbol binario completo infinita (cada nodo tiene dos hijos, excepto los nodos hoja) definida como sigue. Para un nodo etiquetado v su hijo izquierdo se clasificará \textbf{2 * v} y su hijo derecho será etiquetado \textbf{2 * v + 1}. La raíz está etiquetado como 1.
+Se le dará varios casos de entrada cada caso consta de dos números v y w, $1 \leq v, w \leq (2^{63})-1$. Para cada consulta, hay que imprimir el LCA entre los nodos v y w del árbol binario.
+
+\datos

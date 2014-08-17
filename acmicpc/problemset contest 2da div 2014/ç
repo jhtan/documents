@@ -1,0 +1,28 @@
+\pagestyle{myheadings}
+\begin{titlepage}
+
+\includegraphics[scale=1]{./plantillas/icpc2013.jpg}
+\begin{center}
+%\epsfig{file=./pl./antillas/icpc2013.jpg, scale=1.1}
+%\vspace{2cm}
+
+\vspace{1cm}
+{\large \bf Estado Plurinacional de Bolivia}\\[12pt]
+\vspace{0.3cm}
+{\Large \bf Olimpiada Científica Estudiantil}\\[12pt]
+
+\vspace{0.5cm}
+{\large Olimipiada Boliviana de Informática}\\[12pt]
+
+\vspace{0.5cm}
+{\Large \bf Solucionario de Examen - Nivel 3}\\[12pt]
+\tableofcontents
+\end{center}
+%\vspace{2cm}
+\emph{Las paginas están numeradas desde el 1 al \pageref{lastpage}.}
+\vfill
+\begin{center}
+\today
+\end{center}
+\end{titlepage}
+

@@ -1,0 +1,25 @@
+\problem{Fiboprimos}{fiboprimos}
+
+Juan es una persona muy curiosa, y desde que conoce los fiboncacci, ha quedado maravillado por las muchas propiedades que tiene. Cada fibonacci puede ser descompuesto en sus factores primos, si solo tomamos en cuenta los numeros de fibonacci, ciertos de ellos aparecen con un factor primo que ningun otro anterior fibonacci tenia, a estos Juan les llamo FiboPrimos, por ejemplo la siguiente tabla muestra los factores que no aparecen anteriormente de los primeros 9 fibonacci.
+En la tabla por ejemplo los factores primos de 34 son 2 y 17, el 17 no aparece como factor primo de ningun numero fibonacci anterior a 34 por tanto se trata de un FiboPrimo.
+
+\begin{center}
+    \begin{tabular}{ | l | l | l | l | l | l | l | l | l | l | }
+    \hline
+     & Fib(1) & Fib(2) & Fib(3) & Fib(4) & Fib(5) & Fib(6) & Fib(7) & Fib(8) & Fib(9) \\ \hline
+    Valor Fibonacci & 1 & 2 & 3 & 5 & 8 & 13 & 21 & 34 & 55 \\ \hline
+    Fiboprimo & - & 2 & 3 & 5 & - & 13 & 7 & 17 & 11 \\ \hline
+    \end{tabular}
+\end{center}
+
+Juan es tan habilidoso que se dio cuenta de que no importa que tan grande el fibonacci, de tener un FiboPrimo, este siempre sera unico. A pesar de ello a el le cuesta mucho calcular el    i-esimo FiboPrimo a mano, asi que pide tu ayuda.
+
+\subsection*{Input}
+
+La entrada comienza con un numero natural $N \leq 100000$, que es el numero de consultas. Luego vendran N lineas cada una con un entero T tal que $0 \leq T \leq 100000$.
+
+\subsection*{Output}
+
+Por cada entero T se pide imprimir una salida con el FiboPrimo de Fibo(T), de  no tener Fibo(T) un FiboPrimo imprime, NO FIBOPRIMO
+
+\datos
