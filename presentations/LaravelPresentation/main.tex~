@@ -25,7 +25,9 @@
 
 \documentclass{beamer} %
 \usetheme{CambridgeUS}
-\usepackage[latin1]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
 \usefonttheme{professionalfonts}
 \usepackage{times}
 \usepackage{tikz}
@@ -33,26 +35,36 @@
 \usepackage{verbatim}
 \usetikzlibrary{arrows,shapes}
 
-\author{Author}
-\title{Presentation title}
+\title{Laravel, Framework PHP para la Web}
+\author{Jhonatan I. Castro Rocabado} 
+%\institute{Universidad Mayor de San Andrés}
 
 \begin{document}
 
-\begin{comment}
-:Title: Beamer arrows
-:Tags: Remember picture, Beamer, Physics & chemistry, Overlays
-:Use page: 3
+\frame{\titlepage} % The Title Page!.. :D
 
-With PGF/TikZ version 1.09 and later, it is possible to draw paths between nodes across
-different pictures. This is a useful feature for presentations with the
-Beamer package. In this example I've combined the new PGF/TikZ's overlay feature
-with Beamer overlays. Download the PDF version to see the result.
+\begin{frame}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{center}
+      \includegraphics[scale=1]{LaravelLogo}
+    \end{center}    
+    \column{0.5\textwidth}
+    Laravel es un Framework PHP open-source. creado por Taylor Otwell en junio del 2011. \pause
 
-**Note.** This only works with PDFTeX, and you have to run PDFTeX twice.
+    \begin{itemize}[<+-| alert@+>]
+    \item Basado en Symfony.
+    \item Sigue la arquitectura Modelo-Vista-Controlador (MVC).
+    \item Sistema de empaquetado modular.
+    \item Diferentes formas para acceder a bases de datos relacionales.
+    \item Utilidades que ayudan al deployment de la aplicación y a su mantenimiento.
+    \end{itemize}
+  \end{columns}
+\end{frame}
 
-| Author: Kjell Magne Fauske
-
-\end{comment}
+\begin{frame}
+  Bv
+\end{frame}
 
 
 % For every picture that defines or uses external nodes, you'll have to
@@ -65,7 +77,7 @@ with Beamer overlays. Download the PDF version to see the result.
 \everymath{\displaystyle}
 
 \begin{frame}
-\frametitle{Rigid body dynamics}
+\frametitle{Laravel, Framework PHP para la Web}
 
 \tikzstyle{na} = [baseline=-.5ex]
 
